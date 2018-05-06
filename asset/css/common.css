@@ -1,0 +1,47 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html, input, a {
+	color: #4a3e26;
+	text-decoration: none;
+}
+body {
+	background: linear-gradient(#e8ddc6, #fbf7ea) fixed;
+}
+
+/*header*/
+header {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+
+}
+header h1 {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	line-height: 80%
+}
+header h1 a {
+	text-decoration: none;
+}
+header .login {
+	position: absolute;
+	top: 30px;
+	right: 10px;
+}
+header .menu {
+	padding-top: 30px;
+	text-align: center;
+}
+header .menu a {
+	margin: 0 20px;
+}
+
+
+/*section*/
+article#mainvisual {
+	
+}
