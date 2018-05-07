@@ -226,13 +226,19 @@ section#login input {
 	display: inline;
 	margin: 0 20px;
 }
+.tabmenu li.on a,
 .tabmenu li a:hover {text-decoration: underline;}
+section#event,
+section#notice,
 section#menu {
 	padding: 30px 0;
 	background: #f5f5f5;
 }
-
-section#menu h2 {text-align: center;}
+section#event h2,
+section#notice h2,
+section#menu h2 {
+	text-align: center;
+}
 section#menu article h3 {
 	width: 810px;
 	margin: 30px auto 10px;
@@ -254,7 +260,38 @@ section#menu article li {
 	border: 1px solid #ddd;
 }
 
+/*notice*/
+section#notice table {
+	width: 1000px;
+	margin: 40px auto;
+	text-align: center;
+	border-top: 2px solid #01bc78;
+}
+section#notice td:nth-child(2) {
+	text-align: left;
+}
+section#notice td {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+}
+section#notice th {
+	padding: 10px;
+	border-bottom: 1px solid #01bc78;
+}
 
+section#event table {
+	width: 1000px;
+	margin: 40px auto;
+	border-top: 2px solid #01bc78;
+}
+section#event td {
+	padding: 30px;
+	border-bottom: 1px solid #ddd;
+}
+section#event td:first-child {
+	width: 60%;
+	font-size: 20px
+}
 
 
 
