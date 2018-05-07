@@ -342,9 +342,17 @@ article#sec6 {
 	background-attachment: fixed;
 	color: #fff;
 }
-article#sec4,
-article#sec5 {
-	
+article#sec4 > div,
+article#sec5 > div {
+	width: 1000px;
+	margin: 100px auto;
+	line-height: 170%;
+}
+article#sec4 h3,
+article#sec5 h3 {
+	float: left;
+	width: 400px;
+	height: 100px;
 }
 
 
