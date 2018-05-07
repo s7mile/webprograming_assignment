@@ -4,44 +4,258 @@
 	padding: 0;
 }
 html, input, a {
-	color: #4a3e26;
+	color: #444;
 	text-decoration: none;
-}
-body {
-	background: linear-gradient(#e8ddc6, #fbf7ea) fixed;
 }
 
 /*header*/
 header {
 	position: relative;
-	width: 1200px;
-	margin: 0 auto;
-
 }
 header h1 {
-	position: absolute;
-	top: 10px;
-	left: 10px;
-	line-height: 80%
+	height: 80px;
+	padding-top: 15px;
+	border-bottom: 1px solid #f0f0f0;
+	line-height: 80%;
+	text-align: center;
 }
 header h1 a {
+	color: #01bc78;
+	font-size: 30px;
 	text-decoration: none;
 }
 header .login {
 	position: absolute;
 	top: 30px;
-	right: 10px;
+	right: 30px;
 }
 header .menu {
-	padding-top: 30px;
+	padding: 15px 0;
 	text-align: center;
 }
 header .menu a {
-	margin: 0 20px;
+	margin: 0 40px;
+	color: #666;
 }
+header .menu a:hover {color: #01bc78;}
 
 
 /*section*/
 article#mainvisual {
-	
+	background-color: #01bc78;
+	height: 395px;
 }
+article#mainvisual > div {
+	overflow: hidden;
+	position: relative;
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+}
+article#mainvisual a {
+	opacity: .7;
+	display: inline-block;
+	height: 35px;
+	padding: 0 15px;
+	margin-top: 25px;
+	line-height: 35px;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	color: #fff;
+	font-size: 14px;
+}
+article#mainvisual a:hover {opacity: 1}
+article#mainvisual p.banner {
+	display: inline-block;
+	margin: 35px 0 20px;
+	padding: 10px 20px;
+	background-color: #ffb305;
+	color: #fff;
+}
+article#mainvisual p.context {
+	color: #fff;
+	font-size: 60px;
+	font-weight: bold;
+}
+article#mainvisual p.subCont {
+	margin-top: 10px;
+	color: #fff;
+}
+article#mainvisual img {
+	position: absolute;
+	right: 0;
+	top: 40px;
+}
+article.contArea {
+	padding: 50px 0;
+	text-align: center;
+}
+article > h2 {
+	text-align: center;
+}
+article > p {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	font-size: 15px;
+}
+article .moreBtn {
+	display: inline-block;
+	padding: 10px 20px;
+	margin-top: 50px;
+	border: 2px solid #01bc78;
+	border-radius: 20px;
+	color: #01bc78;
+	font-size: 13px;
+}
+
+article#popArea ul {text-align: center;}
+article#popArea li {
+	display: inline-block;
+	border-radius: 100px;
+	width: 200px;
+	height: 200px;
+	margin: 0 10px;
+	padding-top: 70px;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	font-size: 24px;
+	color: rgba(0, 0, 0, .5);
+}
+article#popArea li.blue {background-color: #cde5e5;}
+article#popArea li.gray {background-color: #ccc;}
+article#popArea li.pink {background-color: #dfc9cc;}
+article#popArea li.org {background-color: #f4dfc0;}
+article#popArea li.brown {background-color: #e8e1d9;}
+
+
+article#menuArea {
+	background: #f5f5f5;
+}
+article#menuArea li {
+	margin: 20px 0;
+	padding: 50px;
+	list-style-type: none;
+	text-align: left;
+	background: #fff;
+}
+article#menuArea li > div {
+	width: 800px;
+	margin: 0 auto;
+}
+article#menuArea h3 {
+	float: left;
+	width: 200px;
+	font-size: 40px;
+	font-weight: normal;
+}
+article#menuArea p {
+	line-height: 150%;
+}
+
+footer {
+	border-top: 1px solid #f0f0f0;
+}
+footer > div {
+	width: 1000px;
+	margin: 30px auto 40px;
+}
+footer h1 {
+	float: left;
+	height: 80px;
+	padding-top: 15px;
+	margin-right: 20px;
+	line-height: 80%;
+}
+footer h1 a {
+	color: #01bc78;
+	font-size: 30px;
+	text-decoration: none;
+}
+footer address {
+	padding-top: 17px;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+
+/*login*/
+section#login {
+	padding: 50px 0;
+	background-color: #01bc78;
+}
+section#login h2 {
+	width: 150px;
+	height: 150px;
+	margin: 20px auto 60px;
+	padding-top: 60px;
+	border-radius: 50%;
+	background-color: #01bc78;
+	color: #fff;
+	font-size: 30px;
+	font-weight: normal;
+	text-align: center;
+}
+section#login form {
+	position: relative;
+	width: 400px;
+	margin: 0 auto;
+	padding: 30px;
+	background: #fff;
+}
+section#login form > p {
+	margin: 10px 0;
+}
+
+section#login input {
+	width: 100%;
+	padding: 10px 20px;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	font-size: 20px;
+}
+
+/*menu*/
+.tabmenu {
+	margin-top: 20px;
+	text-align: center;
+}
+.tabmenu li {
+	display: inline;
+	margin: 0 20px;
+}
+.tabmenu li a:hover {text-decoration: underline;}
+section#menu {
+	padding: 30px 0;
+	background: #f5f5f5;
+}
+
+section#menu h2 {text-align: center;}
+section#menu article h3 {
+	width: 810px;
+	margin: 30px auto 10px;
+	font-weight: normal;
+	font-size: 30px;
+}
+section#menu article ul {
+	width: 820px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+section#menu article li {
+	display: inline-block;
+	width: 200px;
+	height: 300px;
+	background: #fff;
+	margin-bottom: 10px;
+	border: 1px solid #ddd;
+}
+
+
+
+
+
+
