@@ -11,6 +11,7 @@ html, input, a {
 /*header*/
 header {
 	position: relative;
+	background: #fff;
 }
 header h1 {
 	height: 80px;
@@ -292,6 +293,60 @@ section#event td:first-child {
 	width: 60%;
 	font-size: 20px
 }
+
+
+/*company*/
+article#sec1 {
+	height: 600px;
+	background: url("../img/bg.jpg");
+	background-size: cover;
+	color: #fff;
+}
+article#sec1 > p {
+	margin: 0;
+	padding-top: 210px;
+	text-shadow: 0 0 5px #000;
+	font-size: 50px;
+	font-weight: 100
+}
+article#sec2 {
+	padding: 50px 0;
+}
+article#sec2 > p {
+	font-size: 30px;
+}
+article#sec2 ul {text-align: center;}
+article#sec2 li {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	margin: 0 20px;
+	padding-top: 85px;
+	text-align: center;
+	border: 1px solid #aaa;
+	border-radius: 50%;
+}
+article#sec2 li.color {border-color: #01bc78;}
+article#sec3 {
+	height: 500px;
+	background: url("../img/bg2.jpg");
+	background-size: cover;
+	background-position: 0 -200px;
+	background-attachment: fixed;
+	color: #fff;
+}
+article#sec6 {
+	height: 300px;
+	background: url("../img/bg3.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
+}
+article#sec4,
+article#sec5 {
+	
+}
+
 
 
 
