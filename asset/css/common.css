@@ -255,12 +255,21 @@ section#menu article ul {
 }
 
 section#menu article li {
+	position: relative;
+	overflow: hidden;
 	display: inline-block;
 	width: 200px;
 	height: 300px;
 	background: #fff;
 	margin-bottom: 10px;
 	border: 1px solid #ddd;
+	text-align: center;
+}
+section#menu article li img {
+	position: absolute;
+	bottom: 1px;
+	left: -100px;
+	height: 280px;
 }
 
 /*notice*/
