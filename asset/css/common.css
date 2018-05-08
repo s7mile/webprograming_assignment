@@ -271,6 +271,8 @@ section#menu article li img {
 	left: -100px;
 	height: 280px;
 }
+section#menu article#bever li img {left: -40px;}
+section#menu article#dessert li img {left: -40px;}
 
 /*notice*/
 section#notice table {
