@@ -46,12 +46,45 @@ article#mainvisual {
 	background-color: #01bc78;
 	height: 395px;
 }
-article#mainvisual > div {
-	overflow: hidden;
+article#mainvisual #leftMoveBtn {
+	content: "<";
+	position: absolute;
+	top: 260px;
+	left: 0;
+	display: block;
+	width: 100px;
+	height: 100px;
+	font-size: 50px;
+	color: #fff;
+	text-align: center;
+	background: none;
+	border: 0;
+}
+article#mainvisual #rightMoveBtn {
+	content: ">";
+	position: absolute;
+	top: 260px;
+	right: 0;
+	display: block;
+	width: 100px;
+	height: 100px;
+	font-size: 50px;
+	color: #fff;
+	text-align: center;
+	background: none;
+	border: 0;
+}
+article#mainvisual ul {
 	position: relative;
 	width: 1000px;
-	height: 100%;
+	height: 395px;
 	margin: 0 auto;
+	overflow: hidden;
+}
+article#mainvisual > ul > li {
+	overflow: hidden;
+	position: relative;
+	height: 395px;
 }
 article#mainvisual a {
 	opacity: .7;
@@ -291,6 +324,11 @@ section#notice td {
 section#notice th {
 	padding: 10px;
 	border-bottom: 1px solid #01bc78;
+}
+section#notice .view td {text-align: left;}
+section#notice .view td.date {
+	text-align: right;
+	border-bottom: 0;
 }
 
 section#event table {
