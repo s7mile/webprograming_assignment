@@ -43,3 +43,16 @@ function outColor4(){
 	document.getElementById("sec2_4").style.borderColor = "#aaa";
 	document.getElementById("sec2_4").style.fontWeight = "normal";
 }
+
+function loginForm(){
+	if(fr.userid.value == "") {
+		alert("아이디를 입력해 주세요.");
+		fr.userid.focus();
+		return false;
+
+	}else if(fr.userpw.value == ""){
+		alert("비밀번호를 입력해 주세요.");
+		fr.userpw.focus();
+		return false;
+	}else return true;
+}

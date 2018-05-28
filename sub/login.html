@@ -4,13 +4,14 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="../asset/css/common.css" type="text/css">
 	<title>Coffee?Coffee! 커피?커피!</title>
+	<script type="text/javascript" src="../asset/js/common.js"></script>
 </head>
 <body>
 	<header>
 		<h1><a href="/">Coffee?<br>Coffee!</a></h1>
 	</header>
 	<section id="login">
-		<form action="" method="post">
+		<form action="" method="post" name="fr" onsubmit="return loginForm();">
 			<h2>Login</h2>
 			<p>
 				<input type="text" id="userid" name="userid" placeholder="아이디">
