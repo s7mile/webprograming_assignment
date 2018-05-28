@@ -6,7 +6,7 @@
 	<title>Coffee?Coffee! 커피?커피!</title>
 	<script type="text/javascript" src="asset/js/common.js"></script>
 </head>
-<body>
+<body onload="nowTime()">
 	<header>
 		<h1><a href="/">Coffee?<br>Coffee!</a></h1>
 		<a href="/sub/login.html" class="login">로그인</a>
@@ -39,7 +39,8 @@
 			<button id="rightMoveBtn" onclick="mainVisual();">&gt;</button>
 		</article>
 		<article id="timeArea">
-			00:00:00
+			<h2>커피먹기 좋은 시간</h2>
+			<p id="nowTime">??:??:??</p>
 		</article>
 		<article id="popArea" class="contArea">
 			<h2>이달의 인기상품</h2>

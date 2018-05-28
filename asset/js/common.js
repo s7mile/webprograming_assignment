@@ -56,3 +56,23 @@ function loginForm(){
 		return false;
 	}else return true;
 }
+
+function nowTime(){
+	setInterval(function(){
+		var d = new Date();
+		var hours = '', min = '', sec = '';
+
+		hours = d.getHours() < 10 ? "0" + d.getHours() : d.getHours();
+		min = d.getMinutes() < 10 ? "0" + d.getMinutes() : d.getMinutes();
+		sec = d.getSeconds() < 10 ? "0" + d.getSeconds() : d.getSeconds();
+
+		console.log(hours);
+		console.log(min);
+		console.log(sec);
+		document.getElementById("nowTime").innerHTML=hours + ":" + min + ":" + sec;
+	}, 1000);
+};
+
+
+
+
