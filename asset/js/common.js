@@ -54,7 +54,10 @@ function loginForm(){
 		alert("비밀번호를 입력해 주세요.");
 		fr.userpw.focus();
 		return false;
-	}else return true;
+	}else{
+		alert("환영합니다~");
+		return false;
+	}
 }
 
 function nowTime(){
@@ -81,7 +84,7 @@ function eventListFunc(){
 		period: "2018-05-01~2018-05-08",
 		winnerDate: "2018-05-09"
 	}
-	
+
 	for(var i=0; i<5; i++)
 		html += "<tr><td><a href='"+listObj.link+"'>"+listObj.title+"</a></td><td>이벤트 기간 : "+listObj.period+"<br>당첨자 발표 : "+listObj.winnerDate+"</td></tr>";
 	
