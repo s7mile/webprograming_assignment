@@ -83,7 +83,10 @@ article#mainvisual ul {
 }
 article#mainvisual > ul > li {
 	overflow: hidden;
-	position: relative;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 	height: 395px;
 }
 article#mainvisual a {
@@ -316,6 +319,7 @@ section#menu article li img {
 }
 section#menu article#bever li img {left: -40px;}
 section#menu article#dessert li img {left: -40px;}
+#bever, #dessert {display: none;}
 
 /*notice*/
 section#notice table {
@@ -354,6 +358,7 @@ section#event td:first-child {
 	width: 60%;
 	font-size: 20px
 }
+#secVisual {display: none;}
 
 
 /*company*/
