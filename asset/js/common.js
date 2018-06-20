@@ -14,6 +14,8 @@ $(function(){
 
 	//menu.html tabmenu
 	$("#menu .tabmenu a").on("click", function(){
+		$("#menu .tabmenu li").removeClass("on");
+		$(this).parent().addClass("on");
 		$("#menu article").hide();
 		$("#" + $(this).attr("data-type")).slideDown();
 	});
