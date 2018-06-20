@@ -26,6 +26,33 @@ $(function(){
 	}, function(){
 		$(this).css({"border-color": "#aaa", "font-weight": "normal"});
 	});
+
+	// $("#eventList .tabmenu a").on("click", function(){
+
+	// });
+
+	var html = '';
+	var listObj = {
+		title: "커피짱~ 이벤트 공지(마감)",
+		link: "javascript:;",
+		period: "2018-05-01~2018-05-08",
+		winnerDate: "2018-05-09"
+	}
+
+	for(var i=0; i<5; i++){
+		html += "<tr class='listArea'><td><a href='"+listObj.link+"'>"+listObj.title+"</a></td><td>이벤트 기간 : "+listObj.period+"<br>당첨자 발표 : "+listObj.winnerDate+"</td></tr>";
+		html += '<tr class="viewArea"><td colspan="2">안녕하세요. 커피?커피!입니다.<br>커피?커피! 사이트가 오픈했습니다!<br>여러분들의 많은 사랑 부탁드립니다.<br><br>감사합니다.</td></tr>';
+	}
+	$("#eventList").html(html);
+
+	$(".listArea td > a").on("click", function(){
+		var target = $(this).parents("tr").next().find("td");
+		if($(target).hasClass("on"))
+			$(target).hide().removeClass("on");
+		else
+			$(target).show().addClass("on");
+	});
+
 });
 // function mainVisual(){
 // 	if(document.getElementById("firstVisual").className.match(/\bon\b/)){
@@ -119,6 +146,8 @@ function eventListFunc(){
 	
 	document.getElementById("eventList").innerHTML=html
 }
+
+
 
 
 

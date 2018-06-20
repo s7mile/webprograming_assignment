@@ -358,6 +358,10 @@ section#event td:first-child {
 	width: 60%;
 	font-size: 20px
 }
+section#event .viewArea td {
+	display: none;
+	font-size: 12px;
+}
 #secVisual {display: none;}
 
 
