@@ -295,13 +295,12 @@ section#menu article h3 {
 	font-size: 30px;
 }
 section#menu article ul {
-	width: 820px;
-	margin: 0 auto;
 	text-align: center;
 }
 
 section#menu article li {
 	position: relative;
+	float: left;
 	overflow: hidden;
 	display: inline-block;
 	width: 200px;
@@ -311,9 +310,14 @@ section#menu article li {
 	border: 1px solid #ddd;
 	text-align: center;
 }
+section#menu article li.big {
+	height: 350px;
+}
+section#menu article li.small {
+	height: 250px;
+}
 section#menu article li img {
 	position: absolute;
-	bottom: 1px;
 	left: -100px;
 	height: 280px;
 }
