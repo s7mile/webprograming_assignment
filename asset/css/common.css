@@ -297,6 +297,16 @@ section#menu article h3 {
 section#menu article ul {
 	text-align: center;
 }
+section#menu article#bever ul,
+section#menu article#dessert ul {
+	width: 800px;
+	margin: 0 auto;
+}
+section#menu article ul:after {
+	content: "";
+	clear: both;
+	display: block;
+}
 
 section#menu article li {
 	position: relative;
